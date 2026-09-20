@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-ExtraBold.ttf') format('truetype');font-weight:800}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
+body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.outer{position:absolute;left:20pt;top:14pt;right:20pt;width:555.2pt;height:812pt;background:#E8DFD0;border-radius:28pt;padding:13pt 14pt 12pt 14pt;display:flex;flex-direction:column;gap:9pt}
+.card{background:#FFFCF2;border-radius:17pt;box-shadow:0 1.5pt 8pt rgba(90,70,50,0.06);position:relative;overflow:hidden}
+.header{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:12pt 18pt;min-height:78pt}
+.header-text{flex:1;text-align:right;padding-left:12pt}
+.avatar-wrap{width:64pt;height:64pt;position:relative;flex-shrink:0}
+.avatar-ring-outer{position:absolute;inset:0;border-radius:50%;background:#FFFBF0;display:flex;align-items:center;justify-content:center}
+.avatar-ring{width:58pt;height:58pt;border-radius:50%;background:#B89A74;padding:2pt;display:flex;align-items:center;justify-content:center}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:2pt;display:flex;align-items:center;justify-content:center}
+.avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.footer{background:#3D2318;border-radius:20pt;height:18pt;display:flex;align-items:center;justify-content:space-between;padding:0 14pt;color:#F5E9D6;font-size:5.5pt;margin-top:auto}
+.section{padding:9pt 12pt}
+.section-head{display:flex;align-items:center;justify-content:flex-start;flex-direction:row;gap:6pt;margin-bottom:5pt}
+.accent{width:3.6pt;height:14pt;background:#8B5E3F;border-radius:2pt}
+.section-title{font-weight:800;font-size:9.5pt;color:#2A1E15}
+.body-text{font-size:6.6pt;line-height:1.8;color:#3D2E22;text-align:justify}
+.chip{background:#E8D8C8;color:#4A3726;font-size:5.6pt;font-weight:600;padding:2pt 6pt;border-radius:9pt;display:inline-block;margin:2pt}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:7pt}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7pt}
+.img-card{border-radius:11pt;overflow:hidden;background:#E8D8C8;position:relative}
+.img-card img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+</head>
+<body>
+<div class="outer">
+  <div class="card header">
+    <div class="header-text">
+      <div style="font-weight:800;font-size:17pt;color:#241A11">شبیه‌ساز رانندگی واقعیت مجازی - روز</div>
+      <div style="font-weight:700;font-size:9.5pt;color:#5A4636">Unity VR Driving Simulator • Day Mode • 9 نمای جدید</div>
+      <div style="font-size:6.8pt;color:#6E5D4E;margin-top:3pt">ملیکا شاهقدمی | تکنیکال آرتیست | Unity و Unreal | ۷۲+ FPS | محیط کوهستانی با دریاچه</div>
+    </div>
+    <div class="avatar-wrap"><div class="avatar-ring-outer"><div class="avatar-ring"><div class="avatar-inner"><img src="img/avatar.png"></div></div></div></div>
+  </div>
+
+  <!-- Top 2 hero - best panoramic -->
+  <div class="card" style="padding:6pt">
+    <div class="grid2">
+      <div class="img-card" style="height:128pt"><img src="img/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg"></div>
+      <div class="img-card" style="height:128pt"><img src="img/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"></div>
+    </div>
+    <div style="font-size:6.2pt;color:#6E5D4E;text-align:right;padding:4pt 4pt 1pt 4pt">نمای هوایی دریاچه و جاده کوهستانی - محیط باز با نورپردازی روز طبیعی - بهینه برای VR با Draw Call بهینه‌شده</div>
+  </div>
+
+  <div class="card section" style="padding:8pt 12pt">
+    <div class="section-head"><div class="accent"></div><div class="section-title">معرفی پروژه روز</div></div>
+    <div class="body-text"><b>محیط:</b> جاده کوهستانی کنار دریاچه با تونل، مسیر خاکی، پوشش گیاهی، بیلبورد فارسی و سازه‌های کنار جاده. <b>نقش من:</b> چیدمان کامل صحنه در Unity، نورپردازی روز با Skybox طبیعی، بهینه‌سازی Terrain و Vegetation برای ۷۲+ FPS روی Quest 3. این ۹ تصویر جدید از بیلد روز هستند - بدون UI ادیتور، تمیز و حرفه‌ای برای پورتفولیو.</div>
+    <div style="margin-top:5pt"><span class="chip">Unity 2022</span><span class="chip">Day Mode</span><span class="chip">Mountain Lake</span><span class="chip">VR Optimized</span><span class="chip">۷۲+ FPS</span><span class="chip">Terrain</span><span class="chip">Vegetation</span></div>
+  </div>
+
+  <!-- Middle 3 images - road variety -->
+  <div class="card" style="padding:6pt">
+    <div style="font-weight:800;font-size:7.5pt;color:#2A1E15;text-align:right;margin-bottom:4pt;padding-right:4pt">گالری روز - تنوع مسیر (جاده آسفالت، تونل، خاکی)</div>
+    <div class="grid3">
+      <div class="img-card" style="height:92pt"><img src="img/new_vr_day/Screenshot_2025-12-21_174443_clean.jpg"></div>
+      <div class="img-card" style="height:92pt"><img src="img/new_vr_day/Screenshot_2025-12-21_174456_clean.jpg"></div>
+      <div class="img-card" style="height:92pt"><img src="img/new_vr_day/Annotation_2026-07-27_083613_clean.jpg"></div>
+    </div>
+  </div>
+
+  <!-- Bottom 4 images - more details -->
+  <div class="card" style="padding:6pt">
+    <div class="grid2">
+      <div class="img-card" style="height:78pt"><img src="img/new_vr_day/Annotation_2026-07-27_083439_clean.jpg"></div>
+      <div class="img-card" style="height:78pt"><img src="img/new_vr_day/Annotation_2026-07-27_083540_clean.jpg"></div>
+      <div class="img-card" style="height:78pt"><img src="img/new_vr_day/Annotation_2026-07-27_083306_clean.jpg"></div>
+      <div class="img-card" style="height:78pt"><img src="img/new_vr_day/Annotation_2026-07-27_083904_clean.jpg"></div>
+    </div>
+  </div>
+
+  <div class="footer"><span>پورتفولیو — VR رانندگی - روز - ۹ تصویر جدید</span><span>shahghadami.me@gmail.com</span><span>GitHub: melika-sh</span></div>
+</div>
+</body>
+</html>
