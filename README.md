@@ -38,3 +38,26 @@ The portfolio includes environment art, Unity/VR simulator work, a multiplayer s
 - [رزومه و پورتفولیوی فارسی](final/Melika_Shahghadami_Resume_Portfolio.pdf)
 - [نسخه انگلیسی](final/english/Melika_Shahghadami_Resume_Portfolio_EN.pdf)
 - [نسخه Word قابل ویرایش](final/Melika_Shahghadami_Resume_Portfolio_Editable.docx)
+
+## 🔥 New - Professional Portfolio (VR First, Clean) - 2025
+
+**حرفه‌ای‌ترین نسخه - 4 صفحه به جای 8 صفحه - VR اول**
+
+- [Portfolio Professional 4 Pages FA - VR First, Clean Images (PDF)](final/portfolio_professional_fa/Portfolio_FA_4Pages_Professional_Clean.pdf)
+- [Portfolio Professional FA - Main File](final/Melika_Shahghadami_Portfolio_Professional_VR_First_FA.pdf)
+- [Resume Page 1 FA - Fixed Spacing](final/Melika_Shahghadami_Resume_Page1_FA.pdf)
+
+### Changes from old version:
+- ✅ **Wolf images fixed:** 170px → 310px height, full wolf visible, no cropping
+- ✅ **No duplicate labels:** Clean crops without baked labels
+- ✅ **Condensed:** Driving Simulator 3 pages → 1 page, Wolf 2 pages → 1 page (Quality > Quantity)
+- ✅ **VR First:** Strongest project first (recruiter spends 30-60s on first page)
+- ✅ **Professional layout:** 4 pages, clean, Persian RTL
+
+### Pages:
+1. **VR Driving Simulator** - `01_VR_Driving_Simulator_FA.png` - Unity, Meta Quest 3, Day/Night Cycle
+2. **Multiplayer Shooter Environment** - `02_Shooter_Environment_FA.png` - FPS, Desert Map
+3. **Cinematic 3D Environment** - `03_Environment_Cinematic_FA.png` - Environment Art
+4. **Wolf Character + Wireframe** - `04_Wolf_Character_FA.png` - Blender Particle Hair
+
+Overview: `final/portfolio_professional_fa/overview_4pages.png`
