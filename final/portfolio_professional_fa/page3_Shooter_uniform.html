@@ -11,6 +11,7 @@ html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
 body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
 .card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
+.card-dark{background:#2A1E15;border-radius:12pt;overflow:hidden}
 .header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
 .header-text{flex:1;text-align:right;padding-left:8pt}
 .avatar-wrap{width:44pt;height:44pt;position:relative;flex-shrink:0}
@@ -26,10 +27,10 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .chip{background:#E8D8C8;color:#4A3726;font-size:4.5pt;font-weight:600;padding:1pt 4pt;border-radius:6pt;display:inline-block;margin:1pt}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:5pt}
 .grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
-.img-card{border-radius:8pt;overflow:hidden;background:#E8D8C8;position:relative}
+.img-card{border-radius:8pt;overflow:hidden;background:#2A1E15;position:relative}
 .img-card img{width:100%;height:100%;object-fit:cover;display:block}
-.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:2.5pt 4pt;text-align:right}
-.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#FFB86A,#5A6A3F);border-radius:2pt}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:3pt 5pt;text-align:right}
+.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#D4A574,#2A1E15);border-radius:2pt}
 </style>
 </head>
 <body>
@@ -37,67 +38,72 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
   <div class="card header">
     <div class="header-text">
       <div style="font-weight:800;font-size:13pt;color:#241A11">محیط بازی شوتر چندنفره</div>
-      <div style="font-weight:700;font-size:7.5pt;color:#5A4636">Multiplayer Shooter Environment • Unity • FPS Level Design</div>
-      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">ملیکا شاهقدمی | تکنیکال آرتیست | طراحی محیط تاکتیکی برای تجربه چندنفره</div>
+      <div style="font-weight:700;font-size:7.5pt;color:#5A4636">Multiplayer Shooter Environment • Unity • FPS • Level Design</div>
+      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">ملیکا شاهقدمی | تکنیکال آرتیست | طراحی محیط FPS با تمرکز بر گیم‌پلی چندنفره</div>
     </div>
     <div class="avatar-wrap"><div class="avatar-ring"><div class="avatar-inner"><img src="img/avatar.png"></div></div></div>
   </div>
 
   <div class="creative-bar"></div>
 
-  <div class="card" style="padding:4pt;height:204pt">
+  <!-- Hero 2 images -->
+  <div class="card-dark" style="padding:4pt;height:180pt">
     <div class="grid2" style="height:100%">
-      <div class="img-card" style="height:196pt"><img src="img/new_shooter/page6_img1_final.jpg"><div class="label">محیط صحرایی - طراحی مسیر تاکتیکی با پوشش گیاهی</div></div>
-      <div class="img-card" style="height:196pt"><img src="img/new_shooter/page6_img2_final.jpg"><div class="label">نمای بازیکن - ترکیب معماری و گیم‌پلی FPS</div></div>
+      <div class="img-card" style="height:172pt"><img src="img/page6_img1_final.jpg"><div class="label">نمای کلی محیط صحرایی با معماری خشتی و پوشش گیاهی</div></div>
+      <div class="img-card" style="height:172pt"><img src="img/page6_img2_final.jpg"><div class="label">مسیر رقابتی با کاور و نقاط دید برای گیم‌پلی FPS</div></div>
     </div>
   </div>
 
+  <!-- About -->
   <div class="card section" style="height:70pt">
     <div class="section-head"><div class="accent"></div><div class="section-title">درباره پروژه</div></div>
     <div class="body-text">
-      محیط بازی شوتر چندنفره با تمرکز بر طراحی سطح تاکتیکی برای تجربه رقابتی. به عنوان تکنیکال آرتیست، مسئول چیدمان محیط، بهینه‌سازی برای دید بازیکن، و ایجاد مسیرهای متنوع برای گیم‌پلی. محیط با الهام از معماری صحرایی و با توجه به نیازهای چندنفره شامل نقاط پوشش، مسیرهای فرعی و فضای باز برای تعامل طراحی شده و برای اجرای روان در Unity بهینه شده است.
+      طراحی محیط بازی شوتر چندنفره اول شخص در فضای صحرایی با معماری خشتی و نخلستان. به عنوان تکنیکال آرتیست، مسئول چیدمان Level، بهینه‌سازی برای اجرای چندنفره، و طراحی مسیر با کاور و نقاط دید مناسب برای تعادل گیم‌پلی. محیط برای تجربه رقابتی با تمرکز بر خوانایی، جریان حرکت و عملکرد بهینه در Unity طراحی شده است.
     </div>
     <div style="margin-top:2pt">
       <span class="chip">Multiplayer</span><span class="chip">FPS</span><span class="chip">Level Design</span><span class="chip">Unity</span><span class="chip">Environment Art</span><span class="chip">Optimization</span>
     </div>
   </div>
 
+  <!-- Features -->
   <div style="display:flex;gap:5pt;height:50pt">
     <div class="card section" style="flex:1;padding:4pt 7pt">
       <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">ویژگی‌های چندنفره</div></div>
       <div class="body-text" style="font-size:5pt">
-        • طراحی مسیر تاکتیکی برای تعامل چند بازیکن<br>
-        • نقاط پوشش و دید مناسب برای گیم‌پلی رقابتی<br>
-        • بهینه‌سازی برای اجرای روان چندنفره
+        • طراحی مسیر با کاور و تعادل رقابتی<br>
+        • بهینه‌سازی برای اجرای چندنفره روان<br>
+        • نقاط دید و جریان حرکت حرفه‌ای
       </div>
     </div>
     <div class="card section" style="flex:1;padding:4pt 7pt">
       <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">دستاوردهای فنی</div></div>
       <div class="body-text" style="font-size:5pt">
-        • چیدمان محیط ماژولار و قابل توسعه<br>
-        • نورپردازی و متریال PBR برای جو صحرایی<br>
-        • بهینه‌سازی Draw Call برای FPS بالا
+        • چیدمان Level با تمرکز بر گیم‌پلی<br>
+        • تکسچرینگ PBR و نورپردازی صحرایی<br>
+        • بهینه‌سازی Draw Call و LOD
       </div>
     </div>
   </div>
 
-  <div class="card" style="padding:3pt;height:148pt">
+  <!-- Gallery 2 more images -->
+  <div class="card" style="padding:4pt;height:140pt">
     <div class="grid2" style="height:100%">
-      <div class="img-card" style="height:140pt"><img src="img/new_shooter/page6_img3_final.jpg"><div class="label">مسیر پوششی - طراحی برای تاکتیک تیمی</div></div>
-      <div class="img-card" style="height:140pt"><img src="img/new_shooter/page6_img4_final.jpg"><div class="label">مسیر مبارزه - فضای باز با معماری صحرایی</div></div>
+      <div class="img-card" style="height:132pt"><img src="img/page6_img1_final.jpg"><div class="label">نمای کاور و مسیر فرعی</div></div>
+      <div class="img-card" style="height:132pt"><img src="img/page6_img2_final.jpg"><div class="label">نمای رقابتی - مسیر اصلی</div></div>
     </div>
   </div>
 
-  <div class="card" style="padding:3pt;height:72pt">
-    <div class="grid4" style="height:54pt">
-      <div class="img-card"><img src="img/new_shooter/page6_img1_final.jpg"><div class="label">نمای کلی</div></div>
-      <div class="img-card"><img src="img/new_shooter/page6_img2_final.jpg"><div class="label">گیم‌پلی</div></div>
-      <div class="img-card"><img src="img/new_shooter/page6_img3_final.jpg"><div class="label">پوشش</div></div>
-      <div class="img-card"><img src="img/new_shooter/page6_img4_final.jpg"><div class="label">مبارزه</div></div>
+  <!-- Bottom to fill -->
+  <div class="card" style="padding:3pt;height:66pt">
+    <div class="grid4" style="height:60pt">
+      <div class="img-card"><img src="img/page6_img1_final.jpg"><div class="label">محیط صحرایی</div></div>
+      <div class="img-card"><img src="img/page6_img2_final.jpg"><div class="label">معماری خشتی</div></div>
+      <div class="img-card"><img src="img/page6_img1_final.jpg"><div class="label">نخلستان</div></div>
+      <div class="img-card"><img src="img/page6_img2_final.jpg"><div class="label">مسیر FPS</div></div>
     </div>
   </div>
 
-  <div class="footer"><span>محیط بازی شوتر چندنفره - 4 تصویر یکپارچه - بدون فضای خالی</span><span>shahghadami.me@gmail.com</span><span>09124805537</span></div>
+  <div class="footer"><span>محیط شوتر چندنفره - Unity FPS - بدون فضای خالی - یک دست</span><span>shahghadami.me@gmail.com</span><span>09124805537</span></div>
 </div>
 </body>
 </html>
