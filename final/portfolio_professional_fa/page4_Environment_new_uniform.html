@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-ExtraBold.ttf') format('truetype');font-weight:800}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
+body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
+.card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
+.header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
+.header-text{flex:1;text-align:right;padding-left:8pt}
+.avatar-wrap{width:44pt;height:44pt;position:relative;flex-shrink:0}
+.avatar-ring{width:44pt;height:44pt;border-radius:50%;background:#8B5E3F;padding:1.5pt;display:flex;align-items:center;justify-content:center}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:1.5pt}
+.avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.footer{background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
+.section{padding:5pt 9pt}
+.section-head{display:flex;align-items:center;gap:4pt;margin-bottom:2pt}
+.accent{width:2.5pt;height:10pt;background:#8B5E3F;border-radius:2pt}
+.section-title{font-weight:800;font-size:7.5pt;color:#2A1E15}
+.body-text{font-size:5.6pt;line-height:1.65;color:#3D2E22;text-align:justify}
+.chip{background:#E8D8C8;color:#4A3726;font-size:4.5pt;font-weight:600;padding:1pt 4pt;border-radius:6pt;display:inline-block;margin:1pt}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5pt}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
+.img-card{border-radius:8pt;overflow:hidden;background:#C5B8A0;position:relative}
+.img-card img{width:100%;height:100%;object-fit:cover;display:block}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:2.5pt 4pt;text-align:right}
+.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#A8B8A0,#5A6A7A);border-radius:2pt}
+</style>
+</head>
+<body>
+<div class="outer">
+  <div class="card header">
+    <div class="header-text">
+      <div style="font-weight:800;font-size:13pt;color:#241A11">محیط سه‌بعدی سینماتیک - مه و دریاچه</div>
+      <div style="font-weight:700;font-size:7.5pt;color:#5A4636">Cinematic 3D Environment • Fog & Lake • Windmill & Ruins</div>
+      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">ملیکا شاهقدمی | تکنیکال آرتیست | طراحی محیط جوی با مه، آب و پوشش گیاهی</div>
+    </div>
+    <div class="avatar-wrap"><div class="avatar-ring"><div class="avatar-inner"><img src="img/avatar.png"></div></div></div>
+  </div>
+
+  <div class="creative-bar"></div>
+
+  <!-- Hero large with new image 220pt -->
+  <div class="card" style="padding:4pt;height:224pt">
+    <div class="img-card" style="height:216pt">
+      <img src="img/new_env/env_fog_lake_windmill_clean.jpg">
+      <div class="label">محیط سینماتیک با مه، دریاچه، آسیاب بادی و برج سنگی - نورپردازی جوی و پوشش گیاهی متراکم</div>
+    </div>
+  </div>
+
+  <div class="card section" style="height:70pt">
+    <div class="section-head"><div class="accent"></div><div class="section-title">درباره پروژه</div></div>
+    <div class="body-text">
+      محیط سه‌بعدی سینماتیک با تمرکز بر خلق جو مه‌آلود و طبیعی با دریاچه، آسیاب بادی، کلبه مخروبه و برج سنگی. به عنوان تکنیکال آرتیست، مسئول چیدمان محیط، نورپردازی جوی با مه، متریال PBR برای سنگ و چوب، و پوشش گیاهی متراکم. محیط با استفاده از تکنیک‌های Environment Art و با توجه به ترکیب‌بندی سینماتیک طراحی شده و توانایی من در خلق فضای داستان‌گو و جوی را نشان می‌دهد.
+    </div>
+    <div style="margin-top:2pt">
+      <span class="chip">Environment Art</span><span class="chip">Cinematic</span><span class="chip">Fog & Atmosphere</span><span class="chip">PBR</span><span class="chip">Vegetation</span><span class="chip">Storytelling</span>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:5pt;height:50pt">
+    <div class="card section" style="flex:1;padding:4pt 7pt">
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">ویژگی‌های محیطی</div></div>
+      <div class="body-text" style="font-size:5pt">
+        • طراحی جو مه‌آلود با Depth Fog و نورپردازی نرم<br>
+        • ترکیب سازه‌های مخروبه، آسیاب و برج با طبیعت<br>
+        • پوشش گیاهی متراکم و آب با Reflection
+      </div>
+    </div>
+    <div class="card section" style="flex:1;padding:4pt 7pt">
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">دستاوردهای هنری</div></div>
+      <div class="body-text" style="font-size:5pt">
+        • خلق فضای داستان‌گو و جوی با ترکیب‌بندی سینماتیک<br>
+        • متریال PBR برای سنگ، چوب و فلز زنگ‌زده<br>
+        • بهینه‌سازی برای رندر سینماتیک و Real-time
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail crops from same image to fill page 140pt -->
+  <div class="card" style="padding:3pt;height:144pt">
+    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:right;margin-bottom:2pt;padding-right:3pt">جزئیات محیط - آسیاب، کلبه، برج و پوشش گیاهی</div>
+    <div class="grid4" style="height:124pt">
+      <div class="img-card" style="height:124pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:15% 30%"><div class="label">آسیاب بادی</div></div>
+      <div class="img-card" style="height:124pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:65% 45%"><div class="label">کلبه مخروبه</div></div>
+      <div class="img-card" style="height:124pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:85% 30%"><div class="label">برج سنگی</div></div>
+      <div class="img-card" style="height:124pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:50% 75%"><div class="label">دریاچه و مه</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="padding:3pt;height:72pt">
+    <div class="grid2" style="height:64pt">
+      <div class="img-card" style="height:64pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:20% 80%"><div class="label">پوشش گیاهی پیش‌زمینه با عمق میدان</div></div>
+      <div class="img-card" style="height:64pt"><img src="img/new_env/env_fog_lake_windmill_clean.jpg" style="object-position:50% 20%"><div class="label">آسمان مه‌آلود و نورپردازی جوی</div></div>
+    </div>
+  </div>
+
+  <div class="footer"><span>محیط سه‌بعدی سینماتیک - مه و دریاچه - تصویر یکپارچه بدون فضای خالی</span><span>shahghadami.me@gmail.com</span><span>09124805537</span></div>
+</div>
+</body>
+</html>
