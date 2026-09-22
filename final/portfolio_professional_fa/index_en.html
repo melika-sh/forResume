@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Medium.ttf') format('truetype');font-weight:500}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-SemiBold.ttf') format('truetype');font-weight:600}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-ExtraBold.ttf') format('truetype');font-weight:800}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
+body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 520pt 420pt at 15% 10%, #EDE5D8 0%, #E7DDCA 35%, transparent 70%),radial-gradient(ellipse 500pt 380pt at 85% 15%, #D9CBB6 0%, transparent 65%),radial-gradient(ellipse 600pt 500pt at 50% 85%, #C7B5A1 0%, #BBA995 55%, #AD9A87 100%);z-index:0}
+.outer{position:absolute;left:20pt;top:14pt;right:20pt;width:555.2pt;height:auto;background:#E8DFD0;border-radius:28pt;z-index:1;padding:14pt 14pt 12pt 14pt;display:flex;flex-direction:column;gap:12pt;box-shadow:0 4pt 24pt rgba(80,60,40,0.12)}
+.card{background:#FFFCF2;border-radius:17pt;box-shadow:0 1.5pt 8pt rgba(90,70,50,0.06), 0 0 0 0.6pt rgba(120,100,80,0.06);position:relative}
+.header{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:14pt 20pt 13pt 20pt;min-height:118pt}
+.header-text{flex:1;text-align:left;padding-right:14pt}
+.name{font-weight:800;font-size:22pt;line-height:1.15;color:#241A11;margin-bottom:3pt;letter-spacing:-0.2pt}
+.subtitle{font-weight:700;font-size:9.2pt;line-height:1.25;color:#5A4636;margin-bottom:4pt;letter-spacing:0.2pt}
+.subline{font-weight:500;font-size:7.2pt;color:#6E5D4E;margin-bottom:9pt}
+.chips{display:flex;gap:6pt;flex-wrap:wrap;justify-content:flex-start}
+.chip{background:#EDE1CF;border:0.6pt solid #E6D8C3;color:#4A3726;font-size:6pt;font-weight:600;padding:2.6pt 8pt;border-radius:11pt;line-height:1.2;white-space:nowrap}
+.avatar-wrap{width:92pt;height:92pt;position:relative;flex-shrink:0;margin-left:2pt}
+.avatar-ring-outer{position:absolute;inset:0;border-radius:50%;background:#FFFBF0;box-shadow:0 3pt 12pt rgba(0,0,0,0.14), inset 0 0 0 1.2pt #E8DDC8;display:flex;align-items:center;justify-content:center}
+.avatar-ring{width:84pt;height:84pt;border-radius:50%;background:#B89A74;padding:2.4pt;display:flex;align-items:center;justify-content:center;box-shadow:0 1pt 6pt rgba(0,0,0,0.15)}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:3.2pt;display:flex;align-items:center;justify-content:center}
+.avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.main{display:flex;flex-direction:row;gap:12pt;flex:0}
+.col-left{width:193pt;display:flex;flex-direction:column;gap:12pt}
+.col-right{flex:1;display:flex;flex-direction:column;gap:12pt}
+.section{padding:15pt 13pt 14pt 13pt}
+.section-head{display:flex;align-items:center;justify-content:flex-start;flex-direction:row;gap:6pt;margin-bottom:8pt}
+.section-title{font-weight:800;font-size:11pt;color:#2A1E15;line-height:1.2}
+.accent{width:3.8pt;height:15pt;background:#8B5E3F;border-radius:2.2pt;flex-shrink:0}
+.body-text{font-weight:400;font-size:7.2pt;line-height:1.85;color:#3D2E22;text-align:left}
+.bullet{display:flex;flex-direction:row;gap:6pt;align-items:flex-start;margin-bottom:7pt;text-align:left}
+.bullet-dot{width:4pt;height:4pt;background:#7A5A3E;border-radius:50%;margin-top:6pt;flex-shrink:0}
+.bullet-text{font-size:7pt;line-height:1.75;color:#3D2E22;font-weight:400;flex:1;text-align:left}
+.bullet-text b{font-weight:700;color:#2F2116}
+.exp-item{margin-bottom:11pt}
+.exp-item:last-child{margin-bottom:0}
+.exp-head{display:flex;align-items:flex-start;gap:7pt;flex-direction:row;margin-bottom:5pt}
+.date-badge{background:#E8D9C3;border:0.5pt solid #E2D0B8;color:#5A4636;font-size:6pt;font-weight:700;padding:2pt 6pt;border-radius:9pt;white-space:nowrap;line-height:1.2;flex-shrink:0;margin-top:1pt}
+.exp-title{font-size:7.3pt;font-weight:700;color:#2A1E15;line-height:1.45;flex:1;text-align:left}
+.exp-bullets{padding-left:2pt}
+.software-chips{display:flex;flex-wrap:wrap;gap:5pt;justify-content:flex-start}
+.soft-chip{background:#E8D8C8;border:0.5pt solid #E2D0BC;color:#4A3726;font-size:6.3pt;font-weight:600;padding:2.6pt 7pt;border-radius:11pt;line-height:1.2}
+.footer{background:linear-gradient(90deg, #4A2F23 0%, #3D2318 100%);border-radius:20pt;height:21pt;display:flex;align-items:center;justify-content:space-between;padding:0 15pt;color:#F5E9D6;font-size:6pt;font-weight:400;letter-spacing:0.2pt;margin-top:8pt}
+.footer span{white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="outer">
+  <div class="card header">
+    <div class="header-text">
+      <div class="name">Melika Shahghadami</div>
+      <div class="subtitle">Technical Artist | 3D Artist | Unity & VR | Unreal Engine</div>
+      <div class="subline">3D Modeling • Rigging • Technical Art • Unity & Unreal • Virtual Reality</div>
+      <div class="chips">
+        <div class="chip">Unity, Unreal & VR</div>
+        <div class="chip">Rigging & Animation Pipeline</div>
+        <div class="chip">Optimized Real-time Assets</div>
+      </div>
+    </div>
+    <div class="avatar-wrap"><div class="avatar-ring-outer"><div class="avatar-ring"><div class="avatar-inner"><img src="img/avatar.png"></div></div></div></div>
+  </div>
+  <div class="main">
+    <div class="col-left">
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">Skills</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>Low/High Poly Modeling</b>, retopology and optimization of real-time assets</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>Advanced UV Mapping</b>, PBR texturing, baking and material management</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>Professional Rigging</b>, skinning and design of animation control systems (Rig)</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>Scene Layout & Lighting</b>, Shader Graph / Material Editor and performance optimization</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>VFX & Particle Systems</b>, profiling and specialized optimization for VR</div></div>
+      </div>
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">Software</div></div>
+        <div class="software-chips">
+          <div class="soft-chip">Unity</div>
+          <div class="soft-chip">Unreal Engine</div>
+          <div class="soft-chip">Blender</div>
+          <div class="soft-chip">Maya</div>
+          <div class="soft-chip">Substance Painter</div>
+          <div class="soft-chip">Character Creator</div>
+          <div class="soft-chip">iClone</div>
+          <div class="soft-chip">Photoshop</div>
+          <div class="soft-chip">Illustrator</div>
+          <div class="soft-chip">PureRef</div>
+        </div>
+      </div>
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">Strengths</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Specialized optimization for 72+ FPS performance in Unity, Unreal and VR</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Full mastery of production pipeline from modeling to engine implementation</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Proven experience collaborating between art and programming teams</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Creative problem-solving, fast learning and process documentation</div></div>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">About Me</div></div>
+        <div class="body-text">Technical Artist and 3D Artist with 3+ years of specialized experience in the production pipeline of real-time assets for games, simulators and virtual reality. Specialized in optimized modeling, PBR texturing, rigging and technical implementation in Unity and Unreal Engine. My focus is on achieving a precise balance between high visual quality and optimal performance, especially for VR headsets such as Meta Quest 3.</div>
+      </div>
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">Work Experience</div></div>
+        <div class="exp-item">
+          <div class="exp-head"><div class="date-badge">2023–Present</div><div class="exp-title">Ario Soren Company — 3D Designer & Technical Artist</div></div>
+          <div class="exp-bullets">
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Designed and optimized over 100 3D assets for simulator and VR projects</div></div>
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Responsible for scene layout, material setup and professional lighting in Unity and implementation in Unreal Engine</div></div>
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Optimized meshes, textures and Draw Calls by up to 40% for smooth 72+ FPS performance on Meta Quest 3</div></div>
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Developed production pipeline and standardized assets for optimal team collaboration</div></div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-head"><div class="date-badge">2022–2023</div><div class="exp-title">Pishgaman Lotus Company — 3D Designer & Godot Programmer</div></div>
+          <div class="exp-bullets">
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Designed modular environments and 3D assets for game engine</div></div>
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Collaborated closely with development team on technical implementation and final build preparation</div></div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-head"><div class="date-badge">2021–2022</div><div class="exp-title">Tarsim Dade Company — Java Developer</div></div>
+          <div class="exp-bullets">
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Developed and maintained software modules in Java and improved system stability</div></div>
+            <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text">Debugged, optimized code and collaborated in agile product development cycle</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card section">
+        <div class="section-head"><div class="accent"></div><div class="section-title">Education</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>BSc in Computer Engineering</b> — Shahid Beheshti University (2016–2021)</div></div>
+        <div class="bullet"><div class="bullet-dot"></div><div class="bullet-text"><b>MBA — Master of Business Administration</b> — Central Tehran Branch (2021–2024)</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Email: shahghadami.me@gmail.com</span>
+    <span>Phone: 09124805537</span>
+  </div>
+</div>
+</body>
+</html>
