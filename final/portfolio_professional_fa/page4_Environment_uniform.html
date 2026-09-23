@@ -11,7 +11,6 @@ html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
 body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
 .card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
-.card-dark{background:#1A2A1A;border-radius:12pt;overflow:hidden}
 .header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
 .header-text{flex:1;text-align:right;padding-left:8pt}
 .avatar-wrap{width:44pt;height:44pt;position:relative;flex-shrink:0}
@@ -26,12 +25,11 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .body-text{font-size:5.6pt;line-height:1.65;color:#3D2E22;text-align:justify}
 .chip{background:#E8D8C8;color:#4A3726;font-size:4.5pt;font-weight:600;padding:1pt 4pt;border-radius:6pt;display:inline-block;margin:1pt}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:5pt}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4pt}
 .grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
-.img-card{border-radius:8pt;overflow:hidden;background:#1A2A1A;position:relative}
+.img-card{border-radius:8pt;overflow:hidden;background:#2A2A1A;position:relative}
 .img-card img{width:100%;height:100%;object-fit:cover;display:block}
-.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:3pt 5pt;text-align:right}
-.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#6A8B6A,#1A2A1A);border-radius:2pt}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4.2pt;font-weight:600;padding:3pt 5pt;text-align:right}
+.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#6A8B6A,#D4A574);border-radius:2pt}
 </style>
 </head>
 <body>
@@ -40,70 +38,76 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
     <div class="header-text">
       <div style="font-weight:800;font-size:13pt;color:#241A11">محیط سه‌بعدی سینماتیک</div>
       <div style="font-weight:700;font-size:7.5pt;color:#5A4636">Cinematic 3D Environment • Blender • Unreal Engine • Atmospheric Lighting</div>
-      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">ملیکا شاهقدمی | تکنیکال آرتیست | طراحی محیط اتمسفریک با نورپردازی مه‌آلود</div>
+      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">ملیکا شاهقدمی | تکنیکال آرتیست | 4 محیط متفاوت قابل ساخت در Blender</div>
     </div>
     <div class="avatar-wrap"><div class="avatar-ring"><div class="avatar-inner"><img src="img/avatar.png"></div></div></div>
   </div>
 
   <div class="creative-bar"></div>
 
-  <!-- Main hero - new cinematic image -->
-  <div class="card-dark" style="padding:4pt;height:180pt">
-    <div class="img-card" style="height:172pt">
-      <img src="img/new_env/environment_cinematic_new_clean.jpg">
-      <div class="label">محیط اصلی - آسیاب بادی، کلبه متروکه و برج با مه و پوشش گیاهی - Blender Cycles</div>
+  <!-- Main hero 2 images - diverse moods -->
+  <div class="card" style="padding:4pt;height:170pt">
+    <div class="grid2" style="height:100%">
+      <div class="img-card" style="height:162pt">
+        <img src="img/new_env/env_01_windmill_sunny.jpg">
+        <div class="label">آسیاب بادی - روز آفتابی با آسمان آبی - نور طبیعی</div>
+      </div>
+      <div class="img-card" style="height:162pt">
+        <img src="img/new_env/env_03_tower_sunset.jpg">
+        <div class="label">برج سنگی - غروب با نور گرم و سایه‌های بلند</div>
+      </div>
     </div>
   </div>
 
   <!-- About -->
-  <div class="card section" style="height:68pt">
+  <div class="card section" style="height:66pt">
     <div class="section-head"><div class="accent"></div><div class="section-title">درباره پروژه</div></div>
     <div class="body-text">
-      مجموعه محیط‌های سه‌بعدی سینماتیک با فضای مه‌آلود شامل 5 محیط متفاوت قابل ساخت در Blender: آسیاب بادی روی تپه سنگی، کلبه چوبی متروکه ژاپنی، برج سنگی با سقف مسی، دریاچه مه‌آلود با نیزار. به عنوان تکنیکال آرتیست، مدل‌سازی، تکسچرینگ PBR، چیدمان و نورپردازی حجمی. هر محیط با روایت بصری و حس متروکه برای Unreal Engine با Lumen طراحی شده است.
+      مجموعه 4 محیط سه‌بعدی متفاوت با حالت‌های نوری مختلف قابل پیاده‌سازی در Blender: آسیاب بادی در روز آفتابی، کلبه متروکه در جنگل، برج سنگی در غروب، و دریاچه با نیزار. هر محیط با PBR Texturing، چیدمان سینماتیک و نورپردازی متفاوت طراحی شده و برای موتورهای بازی و رندر Cycles بهینه است. تنوع در زمان روز و اتمسفر توانایی خلق فضاهای گوناگون را نشان می‌دهد.
     </div>
     <div style="margin-top:2pt">
-      <span class="chip">Blender</span><span class="chip">Cinematic</span><span class="chip">Environment Art</span><span class="chip">Atmospheric</span><span class="chip">PBR</span><span class="chip">Fog</span><span class="chip">5 Environments</span>
+      <span class="chip">Blender</span><span class="chip">4 Environments</span><span class="chip">PBR</span><span class="chip">Day/Sunset</span><span class="chip">Cinematic</span><span class="chip">Environment Art</span>
     </div>
   </div>
 
   <!-- Features -->
-  <div style="display:flex;gap:5pt;height:48pt">
+  <div style="display:flex;gap:5pt;height:46pt">
     <div class="card section" style="flex:1;padding:4pt 7pt">
-      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">ویژگی‌های هنری</div></div>
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">تنوع حالت‌های نوری</div></div>
       <div class="body-text" style="font-size:5pt">
-        • طراحی 5 محیط داستان‌محور متفاوت<br>
-        • ترکیب معماری قدیمی با طبیعت وحشی<br>
-        • نورپردازی مه‌آلود و حجمی
+        • روز آفتابی با آسمان آبی و نور طبیعی<br>
+        • جنگل با سایه‌های نرم و پوشش گیاهی<br>
+        • غروب با نور گرم و سایه‌های بلند
       </div>
     </div>
     <div class="card section" style="flex:1;padding:4pt 7pt">
-      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">دستاوردهای فنی</div></div>
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">قابل ساخت در Blender</div></div>
       <div class="body-text" style="font-size:5pt">
-        • مدل‌سازی و PBR با جزئیات بالا<br>
-        • چیدمان با عمق و لایه‌بندی سینماتیک<br>
-        • بهینه‌سازی برای رندر Cycles و Real-time
+        • مدل‌سازی Low Poly با جزئیات PBR<br>
+        • چیدمان ساده اما سینماتیک و باورپذیر<br>
+        • بهینه برای Cycles و Unreal Engine
       </div>
     </div>
   </div>
 
-  <!-- Gallery 4 new Blender environments -->
-  <div class="card" style="padding:4pt;height:142pt">
-    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:right;margin-bottom:3pt;padding-right:3pt">محیط‌های ساخته شده با Blender - 4 نمای متفاوت</div>
-    <div class="grid2" style="height:120pt">
-      <div class="img-card" style="height:58pt"><img src="img/new_env/env_blender_foggy_windmill.jpg"><div class="label">آسیاب بادی مه‌آلود روی تپه سنگی</div></div>
-      <div class="img-card" style="height:58pt"><img src="img/new_env/env_blender_abandoned_hut.jpg"><div class="label">کلبه متروکه ژاپنی با سقف خزه‌ای</div></div>
-      <div class="img-card" style="height:58pt"><img src="img/new_env/env_blender_stone_tower.jpg"><div class="label">برج سنگی با سقف مسی روی صخره</div></div>
-      <div class="img-card" style="height:58pt"><img src="img/new_env/env_blender_misty_lake.jpg"><div class="label">دریاچه مه‌آلود با نیزار و چمن بلند</div></div>
+  <!-- Gallery 4 diverse environments -->
+  <div class="card" style="padding:4pt;height:138pt">
+    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:right;margin-bottom:3pt;padding-right:3pt">4 محیط متفاوت - قابل ساخت در Blender - بدون مه تکراری</div>
+    <div class="grid2" style="height:116pt">
+      <div class="img-card" style="height:56pt"><img src="img/new_env/env_01_windmill_sunny.jpg"><div class="label">1. آسیاب - روز آفتابی - آسمان آبی</div></div>
+      <div class="img-card" style="height:56pt"><img src="img/new_env/env_02_hut_forest.jpg"><div class="label">2. کلبه - جنگل - سایه نرم</div></div>
+      <div class="img-card" style="height:56pt"><img src="img/new_env/env_03_tower_sunset.jpg"><div class="label">3. برج - غروب - نور گرم</div></div>
+      <div class="img-card" style="height:56pt"><img src="img/new_env/env_04_lake_reeds.jpg"><div class="label">4. دریاچه - روز ابری بدون مه</div></div>
     </div>
   </div>
 
-  <!-- Bottom row to fill -->
+  <!-- Bottom detail to fill -->
   <div class="card" style="padding:3pt;height:68pt">
     <div class="grid4" style="height:62pt">
-      <div class="img-card"><img src="img/new_env/environment_cinematic_new_clean.jpg"><div class="label">نمای کلی اصلی</div></div>
-      <div class="img-card"><img src="img/new_env/env_blender_foggy_windmill.jpg"><div class="label">مه و آسیاب</div></div>
-      <div class="img-card"><img src="img/new_env/env_blender_stone_tower.jpg"><div class="label">برج سنگی</div></div>
-      <div class="img-card"><img src="img/new_env/env_blender_misty_lake.jpg"><div class="label">دریاچه</div></div>
+      <div class="img-card"><img src="img/new_env/env_01_windmill_sunny.jpg"><div class="label">آفتابی</div></div>
+      <div class="img-card"><img src="img/new_env/env_02_hut_forest.jpg"><div class="label">جنگلی</div></div>
+      <div class="img-card"><img src="img/new_env/env_03_tower_sunset.jpg"><div class="label">غروب</div></div>
+      <div class="img-card"><img src="img/new_env/env_04_lake_reeds.jpg"><div class="label">دریاچه</div></div>
     </div>
   </div>
 
