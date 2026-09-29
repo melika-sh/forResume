@@ -1,0 +1,12 @@
+# Keep repo minimal: only final resumes + image assets + README
+/*
+!/README.md
+!/Melika_Shahghadami_Resume_Portfolio_FA.pdf
+!/Melika_Shahghadami_Resume_Portfolio_EN.pdf
+!/images/
+!images/**
+!/.gitignore
+.DS_Store
+!/source/
+!source/**
+source/**/*.pdf

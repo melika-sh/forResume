@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face{font-family:'Vazirmatn';src:url('../fonts/Vazirmatn-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Vazirmatn';src:url('../fonts/Vazirmatn-Bold.ttf') format('truetype');font-weight:700}
+@font-face{font-family:'Vazirmatn';src:url('../fonts/Vazirmatn-ExtraBold.ttf') format('truetype');font-weight:800}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
+body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
+.card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
+.header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
+.header-text{flex:1;text-align:left;padding-left:8pt}
+.avatar-wrap{width:44pt;height:44pt;position:relative;flex-shrink:0}
+.avatar-ring{width:44pt;height:44pt;border-radius:50%;background:#8B5E3F;padding:1.5pt;display:flex;align-items:center;justify-content:center}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:1.5pt}
+.avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.footer{background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
+.section{padding:5pt 9pt}
+.section-head{display:flex;align-items:center;gap:4pt;margin-bottom:2pt}
+.accent{width:2.5pt;height:10pt;background:#8B5E3F;border-radius:2pt}
+.section-title{font-weight:800;font-size:7.5pt;color:#2A1E15}
+.body-text{font-size:5.6pt;line-height:1.6;color:#3D2E22;text-align:justify}
+.chip{background:#E8D8C8;color:#4A3726;font-size:4.5pt;font-weight:600;padding:1pt 4pt;border-radius:6pt;display:inline-block;margin:1pt}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5pt}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
+.grid5{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:4pt}
+.img-card{border-radius:8pt;overflow:hidden;background:#E8D8C8;position:relative}
+.img-card img{width:100%;height:100%;object-fit:cover;display:block}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:2.5pt 4pt;text-align:left}
+.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#FFB86A,#2A2A4A);border-radius:2pt;margin:0 2pt}
+</style>
+</head>
+<body>
+<div class="outer">
+  <!-- Header 52pt -->
+  <div class="card header">
+    <div class="header-text">
+      <div style="font-weight:800;font-size:13pt;color:#241A11">Multiplayer VR Driving Simulator — Day/Night Cycle</div>
+      <div style="font-weight:700;font-size:7.5pt;color:#5A4636">Multiplayer VR Driving Simulator • Day / Night Cycle • Meta Quest 3</div>
+      <div style="font-size:5.5pt;color:#6E5D4E;margin-top:1pt">Melika Shahghadami | Technical Artist | Large-scale multiplayer environment with dynamic lighting</div>
+    </div>
+    <div class="avatar-wrap"><div class="avatar-ring"><div class="avatar-inner"><img src="../../images/avatar.png"></div></div></div>
+  </div>
+
+  <!-- Creative bar -->
+  <div class="creative-bar"></div>
+
+  <!-- Hero comparison 125pt -->
+  <div class="card" style="padding:4pt;height:125pt">
+    <div class="grid2" style="height:100%">
+      <div class="img-card" style="height:117pt">
+        <img src="../../images/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg">
+        <div class="label">☀️ Day — mountain lake with natural light and ambient detail</div>
+      </div>
+      <div class="img-card" style="height:117pt">
+        <img src="../../images/new_vr_night/Screenshot_2026-04-25_132054_clean.jpg">
+        <div class="label">🌙 Night — moonlight, water reflections and local lights</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About 72pt -->
+  <div class="card section" style="height:72pt">
+    <div class="section-head"><div class="accent"></div><div class="section-title">About the Multiplayer Project</div></div>
+    <div class="body-text">
+      Multiplayer VR driving simulator for Meta Quest 3 with a shared environment and day/night cycle. The environment includes a mountain road, tunnel, lake, vegetation and structures, with dynamic lighting and real-time optimization targeting 72+ FPS.
+    </div>
+    <div style="margin-top:2pt">
+      <span class="chip">Multiplayer</span><span class="chip">VR 72+ FPS</span><span class="chip">Day/Night</span><span class="chip">Network Ready</span><span class="chip">Environment Art</span><span class="chip">Lighting</span><span class="chip">Unity</span><span class="chip">Quest 3</span>
+    </div>
+  </div>
+
+  <!-- Features 2 columns 52pt -->
+  <div style="display:flex;gap:5pt;height:52pt">
+    <div class="card section" style="flex:1;padding:4pt 7pt">
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">Multiplayer Features</div></div>
+      <div class="body-text" style="font-size:5pt">
+        • Shared multi-user environment with synchronization<br>
+        • Draw call and LOD optimization for multiplayer<br>
+        • Route and environment design for user interaction
+      </div>
+    </div>
+    <div class="card section" style="flex:1;padding:4pt 7pt">
+      <div class="section-head"><div class="accent"></div><div class="section-title" style="font-size:6.5pt">Technical Achievements</div></div>
+      <div class="body-text" style="font-size:5pt">
+        • Large mountain environment with lake and tunnel<br>
+        • Day/night lighting with moon and artificial lights<br>
+        <span dir="ltr">• 40% Draw Call Reduction — Tested on Meta Quest 3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Row 1 - Day 5 images 68pt -->
+  <div class="card" style="padding:3pt;height:72pt">
+    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">☀️ Day Views — Route Variety</div>
+    <div class="grid5" style="height:54pt">
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"><div class="label">Billboard</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174443_clean.jpg"><div class="label">Aerial</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174456_clean.jpg"><div class="label">Mountains</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083613_clean.jpg"><div class="label">Forest</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083439_clean.jpg"><div class="label">Dirt Road</div></div>
+    </div>
+  </div>
+
+  <!-- Gallery Row 2 - Night 5 images 68pt -->
+  <div class="card" style="padding:3pt;height:72pt">
+    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">🌙 Night Views — Lighting System</div>
+    <div class="grid5" style="height:54pt">
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130115_clean.jpg"><div class="label">Tunnel</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_131827_clean.jpg"><div class="label">Speed Bump</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130442_clean.jpg"><div class="label">Café</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130409_clean.jpg"><div class="label">Lit Billboard</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_131918_clean.jpg"><div class="label">Building</div></div>
+    </div>
+  </div>
+
+  <!-- Gallery Row 3 - Mixed 4 images 68pt -->
+  <div class="card" style="padding:3pt;height:72pt">
+    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">🔄 Day/Night Comparison — One Location, Two Lightings</div>
+    <div class="grid4" style="height:54pt">
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083540_clean.jpg"><div class="label">Day — Shoreline</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130442_clean.jpg"><div class="label">Night — Café</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083306_clean.jpg"><div class="label">Day — Dirt Road</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083904_clean.jpg"><div class="label">Day — Hill</div></div>
+    </div>
+  </div>
+
+  <!-- Bottom creative strip 42pt - extra images to fill -->
+  <div class="card" style="padding:3pt;height:46pt;background:linear-gradient(to right,#FFFCF2,#E8D8C8)">
+    <div class="grid4" style="height:40pt">
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg"><div class="label">Panorama</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"><div class="label">Main Road</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_132054_clean.jpg"><div class="label">Moon & Water</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130115_clean.jpg"><div class="label">Night Tunnel</div></div>
+    </div>
+  </div>
+
+  <div class="footer"><span>Multiplayer VR Driving Simulator — Day/Night Cycle</span><span>shahghadami.me@gmail.com</span><span>09124805537</span></div>
+</div>
+</body>
+</html>
