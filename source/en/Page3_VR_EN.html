@@ -9,7 +9,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
 body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
+.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:flex-start;gap:8pt}
 .card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
 .header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
 .header-text{flex:1;text-align:left;padding-left:8pt}
@@ -17,20 +17,33 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .avatar-ring{width:44pt;height:44pt;border-radius:50%;background:#8B5E3F;padding:1.5pt;display:flex;align-items:center;justify-content:center}
 .avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:1.5pt}
 .avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
-.footer{background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
+.footer{margin-top:auto;background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
 .section{padding:5pt 9pt}
 .section-head{display:flex;align-items:center;gap:4pt;margin-bottom:2pt}
 .accent{width:2.5pt;height:10pt;background:#8B5E3F;border-radius:2pt}
 .section-title{font-weight:800;font-size:7.5pt;color:#2A1E15}
 .body-text{font-size:5.6pt;line-height:1.6;color:#3D2E22;text-align:justify}
 .chip{background:#E8D8C8;color:#4A3726;font-size:4.5pt;font-weight:600;padding:1pt 4pt;border-radius:6pt;display:inline-block;margin:1pt}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5pt}
-.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
-.grid5{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:4pt}
 .img-card{border-radius:8pt;overflow:hidden;background:#E8D8C8;position:relative}
 .img-card img{width:100%;height:100%;object-fit:cover;display:block}
-.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:2.5pt 4pt;text-align:left}
-.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#FFB86A,#2A2A4A);border-radius:2pt;margin:0 2pt}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:5pt;font-weight:600;padding:4pt 6pt;text-shadow:0 1px 2px rgba(0,0,0,.65);text-align:left}
+.creative-bar{flex-shrink:0;height:3pt;background:linear-gradient(to right,#8B5E3F,#FFB86A,#2A2A4A);border-radius:2pt;margin:0 2pt}
+
+/* Matched day/night galleries: four unique views at the same scale in each. */
+.card-dark{background:#252333;border-radius:12pt;overflow:hidden}
+.gallery{padding:6pt;flex-shrink:0}
+.gallery-day,.gallery-night{height:312pt}
+.gallery-head{height:20pt;display:flex;align-items:center;gap:7pt;margin-bottom:5pt}
+.gallery-title{font-size:8.3pt;font-weight:800;color:#2A1E15;white-space:nowrap}
+.gallery-title:before{content:"";display:inline-block;width:3pt;height:10pt;border-radius:2pt;background:#A67550;margin-inline-end:5pt;vertical-align:-1pt}
+.gallery-meta{direction:ltr;unicode-bidi:isolate;font-size:5.5pt;font-weight:700;letter-spacing:.09em;color:#806E5B;white-space:nowrap}
+.gallery-line{flex:1;height:1pt;background:#D7C5B1}
+.gallery-night .gallery-title{color:#F9F2E6}
+.gallery-night .gallery-title:before{background:#FFB86A}
+.gallery-night .gallery-meta{color:#FFC48C}
+.gallery-night .gallery-line{background:#6A6172}
+.day-grid,.night-grid{height:275pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:5pt}
+.gallery-night .img-card img{filter:brightness(1.48) contrast(.83) saturate(1.06)}
 </style>
 </head>
 <body>
@@ -48,17 +61,14 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
   <!-- Creative bar -->
   <div class="creative-bar"></div>
 
-  <!-- Hero comparison 125pt -->
-  <div class="card" style="padding:4pt;height:125pt">
-    <div class="grid2" style="height:100%">
-      <div class="img-card" style="height:117pt">
-        <img src="../../images/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg">
-        <div class="label">☀️ Day — mountain lake with natural light and ambient detail</div>
-      </div>
-      <div class="img-card" style="height:117pt">
-        <img src="../../images/new_vr_night/Screenshot_2026-04-25_132054_clean.jpg">
-        <div class="label">🌙 Night — moonlight, water reflections and local lights</div>
-      </div>
+  <!-- Day gallery: four unique screenshots, 2 × 2 -->
+  <div class="card gallery gallery-day">
+    <div class="gallery-head"><div class="gallery-title">Daytime Views</div><div class="gallery-line"></div><span class="gallery-meta">01 / DAY</span></div>
+    <div class="day-grid">
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg"><div class="label">Mountain Lake</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083306_clean.jpg"><div class="label">Mountain Tunnel Entrance</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"><div class="label">Road &amp; Speed Bump</div></div>
+      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083613_clean.jpg"><div class="label">Lakeside Route &amp; Buildings</div></div>
     </div>
   </div>
 
@@ -73,49 +83,14 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
     </div>
   </div>
 
-  <!-- Features 2 columns 52pt -->
-  <!-- Gallery Row 1 - Day 5 images 68pt -->
-  <div class="card" style="padding:3pt;height:72pt">
-    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">☀️ Day Views — Route Variety</div>
-    <div class="grid5" style="height:54pt">
-      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"><div class="label">Billboard</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174443_clean.jpg"><div class="label">Aerial</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174456_clean.jpg"><div class="label">Mountains</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083613_clean.jpg"><div class="label">Forest</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083439_clean.jpg"><div class="label">Dirt Road</div></div>
-    </div>
-  </div>
-
-  <!-- Gallery Row 2 - Night 5 images 68pt -->
-  <div class="card" style="padding:3pt;height:72pt">
-    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">🌙 Night Views — Lighting System</div>
-    <div class="grid5" style="height:54pt">
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130115_clean.jpg"><div class="label">Tunnel</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_131827_clean.jpg"><div class="label">Speed Bump</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130442_clean.jpg"><div class="label">Café</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130409_clean.jpg"><div class="label">Lit Billboard</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_131918_clean.jpg"><div class="label">Building</div></div>
-    </div>
-  </div>
-
-  <!-- Gallery Row 3 - Mixed 4 images 68pt -->
-  <div class="card" style="padding:3pt;height:72pt">
-    <div style="font-weight:700;font-size:5.5pt;color:#2A1E15;text-align:left;margin-bottom:2pt;padding-left:3pt">🔄 Day/Night Comparison — One Location, Two Lightings</div>
-    <div class="grid4" style="height:54pt">
-      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083540_clean.jpg"><div class="label">Day — Shoreline</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130442_clean.jpg"><div class="label">Night — Café</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083306_clean.jpg"><div class="label">Day — Dirt Road</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Annotation_2026-07-27_083904_clean.jpg"><div class="label">Day — Hill</div></div>
-    </div>
-  </div>
-
-  <!-- Bottom creative strip 42pt - extra images to fill -->
-  <div class="card" style="padding:3pt;height:46pt;background:linear-gradient(to right,#FFFCF2,#E8D8C8)">
-    <div class="grid4" style="height:40pt">
-      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174617_clean.jpg"><div class="label">Panorama</div></div>
-      <div class="img-card"><img src="../../images/new_vr_day/Screenshot_2025-12-21_174600_clean.jpg"><div class="label">Main Road</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_132054_clean.jpg"><div class="label">Moon & Water</div></div>
-      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130115_clean.jpg"><div class="label">Night Tunnel</div></div>
+  <!-- Night gallery: four unique screenshots, 2 × 2 -->
+  <div class="card-dark gallery gallery-night">
+    <div class="gallery-head"><div class="gallery-title">Nighttime Views</div><div class="gallery-line"></div><span class="gallery-meta">02 / NIGHT</span></div>
+    <div class="night-grid">
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_132054_clean.jpg"><div class="label">Moonlit Lakeside Road</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130115_clean.jpg"><div class="label">Nighttime Tunnel Lighting</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_131827_clean.jpg"><div class="label">Speed Bump &amp; Road Lights</div></div>
+      <div class="img-card"><img src="../../images/new_vr_night/Screenshot_2026-04-25_130442_clean.jpg"><div class="label">Roadside Café at Night</div></div>
     </div>
   </div>
 

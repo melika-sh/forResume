@@ -70,6 +70,12 @@ D3 = {
 'روز - کناره':'Day — Shoreline','شب - کافه':'Night — Café','روز - خاکی':'Day — Dirt Road','روز - تپه':'Day — Hill',
 'تونل شب':'Night Tunnel','تونل':'Tunnel','سرعت‌گیر':'Speed Bump','کافه':'Café','ساختمان':'Building',
 'پانوراما':'Panorama','جاده اصلی':'Main Road','ماه و آب':'Moon & Water',
+# Page 3's four-by-four day/night gallery. Keep these captions when regenerating EN.
+'نماهای روز':'Daytime Views','نماهای شب':'Nighttime Views',
+'دریاچه کوهستانی':'Mountain Lake','ورودی تونل کوهستانی':'Mountain Tunnel Entrance',
+'جاده و سرعت‌گیر':'Road &amp; Speed Bump','مسیر کنار دریاچه و سازه‌ها':'Lakeside Route &amp; Buildings',
+'جاده کنار دریاچه زیر نور ماه':'Moonlit Lakeside Road','نورپردازی تونل در شب':'Nighttime Tunnel Lighting',
+'سرعت‌گیر و روشنایی مسیر':'Speed Bump &amp; Road Lights','کافه کنار جاده در شب':'Roadside Café at Night',
 'شبیه‌ساز رانندگی چندنفره VR - Day / Night Cycle':'Multiplayer VR Driving Simulator — Day/Night Cycle',
 }
 
