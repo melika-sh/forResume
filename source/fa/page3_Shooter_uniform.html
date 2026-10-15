@@ -9,7 +9,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:595.2pt;height:841.92pt;margin:0;padding:0;overflow:hidden}
 body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:space-between}
+.outer{position:absolute;left:14pt;top:10pt;right:14pt;width:567.2pt;height:822pt;background:#E8DFD0;border-radius:20pt;padding:8pt 10pt 8pt 10pt;display:flex;flex-direction:column;justify-content:flex-start;gap:8pt}
 .card{background:#FFFCF2;border-radius:12pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06);overflow:hidden;flex-shrink:0}
 .card-dark{background:#2A1E15;border-radius:12pt;overflow:hidden}
 .header{display:flex;align-items:center;justify-content:space-between;padding:7pt 12pt;height:52pt}
@@ -18,7 +18,7 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .avatar-ring{width:44pt;height:44pt;border-radius:50%;background:#8B5E3F;padding:1.5pt;display:flex;align-items:center;justify-content:center}
 .avatar-inner{width:100%;height:100%;border-radius:50%;background:white;padding:1.5pt}
 .avatar-inner img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
-.footer{background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
+.footer{margin-top:auto;background:#3D2318;border-radius:12pt;height:14pt;display:flex;align-items:center;justify-content:space-between;padding:0 10pt;color:#F5E9D6;font-size:4.8pt;flex-shrink:0}
 .section{padding:5pt 9pt}
 .section-head{display:flex;align-items:center;gap:4pt;margin-bottom:2pt}
 .accent{width:2.5pt;height:10pt;background:#8B5E3F;border-radius:2pt}
@@ -29,8 +29,32 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:4pt}
 .img-card{border-radius:8pt;overflow:hidden;background:#2A1E15;position:relative}
 .img-card img{width:100%;height:100%;object-fit:cover;display:block}
-.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:4pt;font-weight:600;padding:3pt 5pt;text-align:right}
-.creative-bar{height:3pt;background:linear-gradient(to right,#8B5E3F,#D4A574,#2A1E15);border-radius:2pt}
+.label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:5pt;font-weight:600;padding:4pt 6pt;text-shadow:0 1px 2px rgba(0,0,0,.65);text-align:right}
+.creative-bar{flex-shrink:0;height:3pt;background:linear-gradient(to right,#8B5E3F,#D4A574,#2A1E15);border-radius:2pt}
+
+/* Matched day/night galleries: each night image is at least as large as a day image. */
+.gallery{padding:6pt;flex-shrink:0}
+.gallery-day{height:296pt}
+.gallery-night{height:330pt}
+.gallery-head{height:20pt;display:flex;align-items:center;gap:7pt;margin-bottom:5pt}
+.gallery-title{font-size:8.3pt;font-weight:800;color:#2A1E15;white-space:nowrap}
+.gallery-title:before{content:"";display:inline-block;width:3pt;height:10pt;border-radius:2pt;background:#A67550;margin-inline-end:5pt;vertical-align:-1pt}
+.gallery-meta{direction:ltr;unicode-bidi:isolate;font-size:5.5pt;font-weight:700;letter-spacing:.09em;color:#806E5B;white-space:nowrap}
+.gallery-line{flex:1;height:1pt;background:#D7C5B1}
+.gallery-night .gallery-title{color:#F9F2E6}
+.gallery-night .gallery-title:before{background:#D4A574}
+.gallery-night .gallery-meta{color:#DCB98D}
+.gallery-night .gallery-line{background:#755D48}
+.day-grid{height:259pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:5pt}
+.night-top{height:147pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5pt}
+.night-bottom{height:141pt;display:grid;grid-template-columns:1.8fr 1fr;gap:5pt;margin-top:5pt}
+.night-shot img{filter:brightness(1.38) contrast(.89) saturate(1.08)}
+.interior-shot img{filter:brightness(1.17) saturate(1.04);object-position:center 48%}
+.night-note{border-radius:8pt;background:linear-gradient(135deg,#4B3426,#624732);padding:11pt;color:#FAF0E1;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.night-note-index{font-size:5.3pt;font-weight:700;letter-spacing:.1em;color:#DDB78E}
+.night-note-title{font-size:12pt;font-weight:800;line-height:1.35}
+.night-note-subtitle{font-size:6.3pt;line-height:1.5;margin-top:4pt;color:#E7D4BE}
+.night-note-rule{width:40pt;height:1pt;background:#D4A574}
 </style>
 </head>
 <body>
@@ -46,11 +70,14 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 
   <div class="creative-bar"></div>
 
-  <!-- Hero 2 images -->
-  <div class="card-dark" style="padding:4pt;height:180pt">
-    <div class="grid2" style="height:100%">
-      <div class="img-card" style="height:172pt"><img src="../../images/shooter_01.jpg"><div class="label">نمای کلی محیط صحرایی با معماری خشتی و پوشش گیاهی</div></div>
-      <div class="img-card" style="height:172pt"><img src="../../images/shooter_04.jpg"><div class="label">مسیر رقابتی با کاور و نقاط دید برای گیم‌پلی FPS</div></div>
+  <!-- Daytime gallery: four distinct screenshots, 2 × 2 -->
+  <div class="card gallery gallery-day">
+    <div class="gallery-head"><div class="gallery-title">نماهای روز</div><div class="gallery-line"></div><span class="gallery-meta">01 / DAY</span></div>
+    <div class="day-grid">
+      <div class="img-card"><img src="../../images/shooter_01.jpg"><div class="label">نمای کلی محیط صحرایی با معماری خشتی و پوشش گیاهی</div></div>
+      <div class="img-card"><img src="../../images/shooter_04.jpg"><div class="label">مسیر رقابتی با کاور و نقاط دید برای گیم‌پلی FPS</div></div>
+      <div class="img-card"><img src="../../images/shooter_02.jpg"><div class="label">نمای کاور و مسیر فرعی</div></div>
+      <div class="img-card"><img src="../../images/shooter_03.jpg"><div class="label">نمای رقابتی - مسیر اصلی</div></div>
     </div>
   </div>
 
@@ -65,23 +92,21 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
     </div>
   </div>
 
-  <!-- Features -->
-  <!-- Gallery 2 more images -->
-  <div class="card" style="padding:4pt;height:140pt">
-    <div class="grid2" style="height:100%">
-      <div class="img-card" style="height:132pt"><img src="../../images/shooter_02.jpg"><div class="label">نمای کاور و مسیر فرعی</div></div>
-      <div class="img-card" style="height:132pt"><img src="../../images/shooter_03.jpg"><div class="label">نمای رقابتی - مسیر اصلی</div></div>
+  <!-- Night gallery: two exterior views and an equally sized interior detail -->
+  <div class="card-dark gallery gallery-night">
+    <div class="gallery-head"><div class="gallery-title">نماهای شب</div><div class="gallery-line"></div><span class="gallery-meta">02 / NIGHT</span></div>
+    <div class="night-top">
+      <div class="img-card night-shot"><img src="../../images/shooter_05_night_wide.jpg"><div class="label">شب - نمای روستا</div></div>
+      <div class="img-card night-shot"><img src="../../images/shooter_06_night_well.jpg"><div class="label">شب - چاه و چراغ‌ها</div></div>
     </div>
-  </div>
-
-  <!-- Bottom to fill -->
-  <div class="card" style="padding:3pt;height:66pt">
-    <div style="height:60pt;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4pt">
-      <div class="img-card"><img src="../../images/shooter_05_night_wide.jpg"><div class="label">شب - نمای روستا</div></div>
-      <div class="img-card"><img src="../../images/shooter_06_night_well.jpg"><div class="label">شب - چاه و چراغ‌ها</div></div>
-      <div class="img-card"><img src="../../images/shooter_07_interior.jpg"><div class="label">داخل خانه - اتاق سنتی</div></div>
+    <div class="night-bottom">
+      <div class="img-card interior-shot"><img src="../../images/shooter_07_interior.jpg"></div>
+      <div class="night-note">
+        <span class="night-note-index" dir="ltr">03 / INTERIOR</span>
+        <div><div class="night-note-title">فضای داخلی</div><div class="night-note-subtitle">اتاق سنتی • نور و جزئیات محیط</div></div>
+        <div class="night-note-rule"></div>
+      </div>
     </div>
-
   </div>
 
   <div class="footer"><span>محیط بازی شوتر چندنفره</span><span>shahghadami.me@gmail.com</span><span>09124805537</span></div>

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Generate EN (LTR) versions of the 7 resume pages from the FA sources."""
+import os
 import re
 
 BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fa') + '/'
-import os
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'en') + '/'
 
 D1 = {
@@ -90,6 +90,10 @@ D4 = {
 '• LOD و Draw Call Optimization':'• LOD and draw call optimization',
 'نمای کاور و مسیر فرعی':'Cover & Side Route View','نمای رقابتی - مسیر اصلی':'Competitive View — Main Route',
 'محیط صحرایی':'Desert','معماری خشتی':'Adobe','نخلستان':'Palms','مسیر FPS':'FPS Route',
+# Page 4's balanced day/night gallery (keep translations when regenerating EN).
+'نماهای روز':'Daytime Views','نماهای شب':'Nighttime Views',
+'شب - نمای روستا':'Night — Village','شب - چاه و چراغ‌ها':'Night — Well &amp; Lights',
+'فضای داخلی':'Interior','اتاق سنتی • نور و جزئیات محیط':'Traditional room • lighting and details',
 }
 
 D5 = {
