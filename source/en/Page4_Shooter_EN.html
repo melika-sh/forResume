@@ -32,10 +32,9 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);color:#fff;font-size:5pt;font-weight:600;padding:4pt 6pt;text-shadow:0 1px 2px rgba(0,0,0,.65);text-align:left}
 .creative-bar{flex-shrink:0;height:3pt;background:linear-gradient(to right,#8B5E3F,#D4A574,#2A1E15);border-radius:2pt}
 
-/* Matched day/night galleries: each night image is at least as large as a day image. */
+/* Four day and four night screenshots in equal-sized 2 × 2 galleries. */
 .gallery{padding:6pt;flex-shrink:0}
-.gallery-day{height:296pt}
-.gallery-night{height:330pt}
+.gallery-day,.gallery-night{height:313pt}
 .gallery-head{height:20pt;display:flex;align-items:center;gap:7pt;margin-bottom:5pt}
 .gallery-title{font-size:8.3pt;font-weight:800;color:#2A1E15;white-space:nowrap}
 .gallery-title:before{content:"";display:inline-block;width:3pt;height:10pt;border-radius:2pt;background:#A67550;margin-inline-end:5pt;vertical-align:-1pt}
@@ -45,16 +44,9 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
 .gallery-night .gallery-title:before{background:#D4A574}
 .gallery-night .gallery-meta{color:#DCB98D}
 .gallery-night .gallery-line{background:#755D48}
-.day-grid{height:259pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:5pt}
-.night-top{height:147pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5pt}
-.night-bottom{height:141pt;display:grid;grid-template-columns:1.8fr 1fr;gap:5pt;margin-top:5pt}
+.day-grid,.night-grid{height:276pt;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:5pt}
 .night-shot img{filter:brightness(1.38) contrast(.89) saturate(1.08)}
 .interior-shot img{filter:brightness(1.17) saturate(1.04);object-position:center 48%}
-.night-note{border-radius:8pt;background:linear-gradient(135deg,#4B3426,#624732);padding:11pt;color:#FAF0E1;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
-.night-note-index{font-size:5.3pt;font-weight:700;letter-spacing:.1em;color:#DDB78E}
-.night-note-title{font-size:12pt;font-weight:800;line-height:1.35}
-.night-note-subtitle{font-size:6.3pt;line-height:1.5;margin-top:4pt;color:#E7D4BE}
-.night-note-rule{width:40pt;height:1pt;background:#D4A574}
 </style>
 </head>
 <body>
@@ -92,20 +84,14 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;position:relative;-w
     </div>
   </div>
 
-  <!-- Night gallery: two exterior views and an equally sized interior detail -->
+  <!-- Night gallery: four unique screenshots, 2 × 2 like the daytime gallery -->
   <div class="card-dark gallery gallery-night">
     <div class="gallery-head"><div class="gallery-title">Nighttime Views</div><div class="gallery-line"></div><span class="gallery-meta">02 / NIGHT</span></div>
-    <div class="night-top">
+    <div class="night-grid">
       <div class="img-card night-shot"><img src="../../images/shooter_05_night_wide.jpg"><div class="label">Night — Village</div></div>
       <div class="img-card night-shot"><img src="../../images/shooter_06_night_well.jpg"><div class="label">Night — Well &amp; Lights</div></div>
-    </div>
-    <div class="night-bottom">
-      <div class="img-card interior-shot"><img src="../../images/shooter_07_interior.jpg"></div>
-      <div class="night-note">
-        <span class="night-note-index" dir="ltr">03 / INTERIOR</span>
-        <div><div class="night-note-title">Interior</div><div class="night-note-subtitle">Traditional room • lighting and details</div></div>
-        <div class="night-note-rule"></div>
-      </div>
+      <div class="img-card interior-shot"><img src="../../images/shooter_07_interior.jpg"><div class="label">Interior — Traditional Room</div></div>
+      <div class="img-card night-shot"><img src="../../images/shooter_08_night_path.jpg"><div class="label">Night — Village Path</div></div>
     </div>
   </div>
 

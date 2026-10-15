@@ -93,7 +93,7 @@ D4 = {
 # Page 4's balanced day/night gallery (keep translations when regenerating EN).
 'نماهای روز':'Daytime Views','نماهای شب':'Nighttime Views',
 'شب - نمای روستا':'Night — Village','شب - چاه و چراغ‌ها':'Night — Well &amp; Lights',
-'فضای داخلی':'Interior','اتاق سنتی • نور و جزئیات محیط':'Traditional room • lighting and details',
+'داخل خانه - اتاق سنتی':'Interior — Traditional Room','شب - مسیر روستا':'Night — Village Path',
 }
 
 D5 = {
