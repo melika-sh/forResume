@@ -22,32 +22,32 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;-webkit-print-color-
 .av-in{width:100%;height:100%;border-radius:50%;background:#fff;padding:2pt}
 .av-in img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
 /* body columns */
-.cols{display:flex;gap:10pt;margin-top:10pt;flex:1}
-.col-r{flex:1.35;display:flex;flex-direction:column;gap:10pt}
-.col-l{flex:1;display:flex;flex-direction:column;gap:10pt}
-.card{background:#FCF9F0;border-radius:14pt;padding:10pt 13pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06)}
-.sec-title{font-weight:800;font-size:11pt;color:#241A11;text-align:right;padding-bottom:6pt;border-bottom:1pt solid #E4D8C4;margin-bottom:7pt}
+.cols{display:flex;gap:10pt;margin-top:10pt;flex:1;align-items:stretch}
+.col-r{flex:1.35;display:flex;flex-direction:column;gap:12pt;justify-content:space-around}
+.col-l{flex:1;display:flex;flex-direction:column;gap:12pt;justify-content:space-around}
+.card{background:#FCF9F0;border-radius:14pt;padding:11pt 13pt;box-shadow:0 1pt 4pt rgba(90,70,50,0.06)}
+.sec-title{font-weight:800;font-size:11.5pt;color:#241A11;text-align:right;padding-bottom:7pt;border-bottom:1pt solid #E4D8C4;margin-bottom:8pt}
 .sec-title::before{content:'';display:inline-block;width:3pt;height:10pt;background:#8B5E3F;border-radius:2pt;vertical-align:middle;margin-left:5pt}
-.body-text{font-size:6.4pt;line-height:1.9;color:#3D2E22;text-align:justify}
-.job{margin-bottom:9pt}
+.body-text{font-size:7pt;line-height:1.88;color:#3D2E22;text-align:justify}
+.job{margin-bottom:10pt}
 .job:last-child{margin-bottom:0}
-.job-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:3pt}
-.job-name{font-weight:700;font-size:7.2pt;color:#2A1E15}
-.job-date{background:#EDE3D2;color:#5A4636;font-size:5.2pt;font-weight:600;padding:1.5pt 6pt;border-radius:8pt}
-.bullet{font-size:6.2pt;line-height:1.85;color:#3D2E22;text-align:right;padding-right:10pt;position:relative}
+.job-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:4pt}
+.job-name{font-weight:700;font-size:7.8pt;color:#2A1E15}
+.job-date{background:#EDE3D2;color:#5A4636;font-size:5.5pt;font-weight:600;padding:1.5pt 6pt;border-radius:8pt}
+.bullet{font-size:6.4pt;line-height:1.85;color:#3D2E22;text-align:right;padding-right:10pt;position:relative}
 .bullet::before{content:'•';position:absolute;right:0;color:#8B5E3F;font-weight:700}
 /* skills groups */
-.sgroup{margin-bottom:7pt}
-.sg-title{font-weight:700;font-size:7pt;color:#8B5E3F;margin-bottom:2pt}
-.sg-txt{font-size:6.1pt;line-height:1.85;color:#3D2E22;text-align:right}
+.sgroup{margin-bottom:10pt}
+.sg-title{font-weight:700;font-size:7.5pt;color:#8B5E3F;margin-bottom:3pt}
+.sg-txt{font-size:6.8pt;line-height:1.9;color:#3D2E22;text-align:right}
 /* software */
-.sw-label{font-weight:700;font-size:6.6pt;color:#8B5E3F;margin:4pt 0 3pt}
-.sw-row{line-height:2.1}
-.sw-tag{background:#EDE3D2;color:#4A3726;font-size:5.4pt;font-weight:600;padding:1.5pt 6pt;border-radius:8pt;display:inline-block;margin-left:3pt;margin-bottom:2pt}
-.kproj{margin-bottom:5pt;text-align:right;padding-right:10pt;position:relative}
+.sw-label{font-weight:700;font-size:7pt;color:#8B5E3F;margin:5pt 0 4pt}
+.sw-row{line-height:2.3}
+.sw-tag{background:#EDE3D2;color:#4A3726;font-size:5.7pt;font-weight:600;padding:1.5pt 6pt;border-radius:8pt;display:inline-block;margin-left:3pt;margin-bottom:3pt}
+.kproj{margin-bottom:8pt;text-align:right;padding-right:10pt;position:relative}
 .kproj::before{content:'•';position:absolute;right:0;color:#8B5E3F;font-weight:700}
-.kproj b{display:block;font-weight:700;font-size:6.6pt;color:#2A1E15}
-.kproj span{display:block;font-size:5.6pt;color:#6E5D4E;margin-top:1pt}
+.kproj b{display:block;font-weight:700;font-size:7.2pt;color:#2A1E15}
+.kproj span{display:block;font-size:6.1pt;color:#6E5D4E;margin-top:2pt}
 /* footer */
 .footer{background:#3D2318;border-radius:12pt;height:22pt;display:flex;align-items:center;justify-content:space-between;padding:0 14pt;color:#F5E9D6;font-size:6pt;margin-top:10pt}
 .footer b{font-weight:700}
@@ -71,7 +71,7 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;-webkit-print-color-
   <div class="cols">
     <!-- LEFT COLUMN -->
     <div class="col-l">
-      <div class="card" style="flex:1">
+      <div class="card">
         <div class="sec-title">مهارت‌ها</div>
         <div class="sgroup">
           <div class="sg-title">3D Art</div>
@@ -101,12 +101,10 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;-webkit-print-color-
           <span class="sw-tag">Photoshop</span><span class="sw-tag">Maya</span><span class="sw-tag">Character Creator</span><span class="sw-tag">iClone</span><span class="sw-tag">PureRef</span><span class="sw-tag">Illustrator</span>
         </div>
       </div>
-      <div class="card" style="flex:1">
-        <div class="sec-title">پروژه‌های کلیدی</div>
-        <div class="kproj"><b>Industrial Warehouse — Unity URP</b><span>PBR Materials • Volumetric Lighting • Environment Art</span></div>
-        <div class="kproj"><b>VR Driving Simulator — Unity / Meta Quest 3</b><span>Day/Night Cycle • Environment Art • Optimization</span></div>
-        <div class="kproj"><b>Multiplayer Shooter — Unity / VR / FPS</b><span>Level Design • Cover Placement • Sightlines</span></div>
-        <div class="kproj"><b>Cinematic Environment — Blender / Cycles</b><span>PBR • Volumetric Fog • Particle Systems</span></div>
+      <div class="card">
+        <div class="sec-title">تحصیلات</div>
+        <div class="bullet">لیسانس مهندسی کامپیوتر – دانشگاه شهید بهشتی (۱۳۹۵–۱۴۰۰)</div>
+        <div class="bullet">کارشناسی ارشد مدیریت کسب‌وکار – تهران مرکز (۱۴۰۰–۱۴۰۳)</div>
       </div>
     </div>
 
@@ -118,7 +116,7 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;-webkit-print-color-
           Technical Artist و 3D Artist با بیش از ۳ سال تجربه در تولید و آماده‌سازی مدل‌های Real-time برای بازی، شبیه‌ساز و پروژه‌های VR. تجربه در مدل‌سازی و بهینه‌سازی، PBR Texturing، Rigging و پیاده‌سازی فنی مدل‌ها در Unity و Unreal Engine. تمرکز بر ایجاد تعادل بین کیفیت بصری و Performance، به‌ویژه در پروژه‌های VR و Meta Quest 3.
         </div>
       </div>
-      <div class="card" style="flex:1">
+      <div class="card">
         <div class="sec-title">سوابق کاری</div>
         <div class="job">
           <div class="job-head"><span class="job-name">شرکت آریو سورن – طراح سه‌بعدی و تکنیکال آرتیست</span><span class="job-date">۱۴۰۲–اکنون</span></div>
@@ -141,9 +139,11 @@ body{font-family:'Vazirmatn', sans-serif;background:#D5C6B2;-webkit-print-color-
         </div>
       </div>
       <div class="card">
-        <div class="sec-title">تحصیلات</div>
-        <div class="bullet">لیسانس مهندسی کامپیوتر – دانشگاه شهید بهشتی (۱۳۹۵–۱۴۰۰)</div>
-        <div class="bullet">کارشناسی ارشد مدیریت کسب‌وکار – تهران مرکز (۱۴۰۰–۱۴۰۳)</div>
+        <div class="sec-title">پروژه‌های کلیدی</div>
+        <div class="kproj"><b>Industrial Warehouse — Unity URP</b><span>PBR Materials • Volumetric Lighting • Environment Art</span></div>
+        <div class="kproj"><b>VR Driving Simulator — Unity / Meta Quest 3</b><span>Day/Night Cycle • Environment Art • Optimization</span></div>
+        <div class="kproj"><b>Multiplayer Shooter — Unity / VR / FPS</b><span>Level Design • Cover Placement • Sightlines</span></div>
+        <div class="kproj"><b>Cinematic Environment — Blender / Cycles</b><span>PBR • Volumetric Fog • Particle Systems</span></div>
       </div>
     </div>
   </div>
