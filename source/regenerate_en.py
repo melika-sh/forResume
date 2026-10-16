@@ -19,7 +19,6 @@ D1 = {
 # Medutech VR anatomy simulator (solar Hijri 1404 spans 2025–26).
 'شرکت <span dir="ltr">Medutech</span> – شبیه‌ساز آناتومی بدن انسان در VR':'Medutech — Human Anatomy VR Simulator',
 '۱۴۰۴':'2025–26 (1404 SH)',
-'ابزارها: <span dir="ltr">Unity • Blender • Substance</span>':'Tools: Unity • Blender • Substance',
 'طراحی و توسعهٔ یک محیط تعاملی VR با تمرکز بر مدل‌سازی، متریال‌سازی و تعامل با اجزای بدن.':
 'Designed and developed an interactive VR environment focused on 3D modeling, material creation, and interaction with body parts.',
 'شرکت پیشگامان لوتوس – طراح سه‌بعدی و برنامه‌نویس Godot':'Pishgaman Lotus — 3D Designer & Godot Programmer',
