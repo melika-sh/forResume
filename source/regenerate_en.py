@@ -9,16 +9,16 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'en') + '/'
 D1 = {
 'ملیکا شاهقدمی':'Melika Shahghadami',
 'مهارت‌ها':'Skills','نرم‌افزارها':'Software','پروژه‌های کلیدی':'Key Projects','درباره من':'About Me','سوابق کاری':'Work Experience','تحصیلات':'Education',
-'Technical Artist و 3D Artist با بیش از ۳ سال تجربه در تولید و آماده‌سازی دارایی‌های Real-time برای بازی، شبیه‌ساز و پروژه‌های VR. تجربه در مدل‌سازی و بهینه‌سازی، PBR Texturing، Rigging و پیاده‌سازی فنی دارایی‌ها در Unity و Unreal Engine. تمرکز بر ایجاد تعادل بین کیفیت بصری و Performance، به‌ویژه در پروژه‌های VR و Meta Quest 3.':
-'Technical Artist and 3D Artist with 3+ years of experience producing and preparing real-time assets for games, simulators and VR projects. Experienced in modeling and optimization, PBR texturing, rigging, and technical asset implementation in Unity and Unreal Engine. Focused on balancing visual quality and performance, especially in VR projects and on Meta Quest 3.',
+'Technical Artist و 3D Artist با بیش از ۳ سال تجربه در تولید و آماده‌سازی مدل‌های Real-time برای بازی، شبیه‌ساز و پروژه‌های VR. تجربه در مدل‌سازی و بهینه‌سازی، PBR Texturing، Rigging و پیاده‌سازی فنی مدل‌ها در Unity و Unreal Engine. تمرکز بر ایجاد تعادل بین کیفیت بصری و Performance، به‌ویژه در پروژه‌های VR و Meta Quest 3.':
+'Technical Artist and 3D Artist with 3+ years of experience producing and preparing real-time 3D models for games, simulators and VR projects. Experienced in modeling and optimization, PBR texturing, rigging, and technical integration of 3D models in Unity and Unreal Engine. Focused on balancing visual quality and performance, especially in VR projects and on Meta Quest 3.',
 'شرکت آریو سورن – طراح سه‌بعدی و تکنیکال آرتیست':'Ario Sorun — 3D Designer & Technical Artist',
 '۱۴۰۲–اکنون':'2023 – Present',
-'پیاده‌سازی دارایی‌ها در Unity، چیدمان صحنه، تنظیم متریال و نورپردازی.':'Asset implementation in Unity, scene layout, material setup and lighting.',
+'پیاده‌سازی مدل‌ها در Unity، چیدمان صحنه، تنظیم متریال و نورپردازی.':'3D model integration in Unity, scene layout, material setup and lighting.',
 'بهینه‌سازی Mesh، Texture و Draw Calls برای بهبود Performance در پروژه‌های VR روی Meta Quest 3.':'Mesh, texture and draw call optimization to improve performance in VR projects on Meta Quest 3.',
-'توسعه و استانداردسازی فرآیند تولید دارایی‌ها برای هماهنگی بهتر بین تیم‌های Art و Development.':'Developing and standardizing the asset production pipeline for better coordination between Art and Development teams.',
+'توسعه و استانداردسازی فرآیند تولید مدل‌ها برای هماهنگی بهتر بین تیم‌های Art و Development.':'Developing and standardizing the 3D model production pipeline for better coordination between Art and Development teams.',
 'شرکت پیشگامان لوتوس – طراح سه‌بعدی و برنامه‌نویس Godot':'Pishgaman Lotus — 3D Designer & Godot Programmer',
 '۱۴۰۱–۱۴۰۲':'2022 – 2023',
-'طراحی محیط و Modular 3D Assets برای پروژه‌های بازی.':'Environment and modular 3D asset design for game projects.',
+'طراحی محیط و مدل‌های سه‌بعدی ماژولار برای پروژه‌های بازی.':'Environment and modular 3D model design for game projects.',
 'همکاری با تیم Development در پیاده‌سازی فنی و آماده‌سازی Build نهایی.':'Collaborated with the development team on technical implementation and final build preparation.',
 'شرکت ترسیم داده – برنامه‌نویس Java':'Tarsim Dadeh — Java Developer',
 '۱۴۰۰–۱۴۰۱':'2021 – 2022',
